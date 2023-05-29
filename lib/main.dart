@@ -11,7 +11,8 @@ import 'registration/LogIn.dart';
 import 'routes/route.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider<Favorites>(
+  runApp(
+    ChangeNotifierProvider<Favorites>(
     child: const MyApp(),
     create:(_)=>Favorites(),
   ),
@@ -26,7 +27,6 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  GetMaterialApp(
-      title: 'astroo food',
       locale: Locale( 'lang'),
       fallbackLocale: Locale(eng),
   /*    translations: LocalizationApp(),*/
